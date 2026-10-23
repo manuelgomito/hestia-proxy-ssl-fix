@@ -10,18 +10,17 @@ Nginx + Apache as reverse proxy, with Let's Encrypt and multiple domains.
 - Apache2 (backend, ports 8080/8443)
 - PHP-FPM
 - Let's Encrypt
-- (Optional) VitalPBX installed on the same server
 
 ## Documented issues
 
-1. [VitalPBX capturing all domains](01-vitalpbx-capturing-all-domains.md)
+1. [VitalPBX page appearing on all domains](01-vitalpbx-capturing-all-domains.md)
 2. [Invalid webmail certificate](02-webmail-certificate-invalid.md)
 3. [DNS verification fails on Let's Encrypt issuance](03-dns-verification-fails.md)
 
 ## Scripts
 
-- `scripts/fix-sni-global.sh` — applies `proxy_ssl_server_name` globally
-- `scripts/rebuild-all-domains.sh` — rebuilds all web domains for all users
+- [scripts/fix-sni-global.sh](scripts/fix-sni-global.sh) — applies `proxy_ssl_server_name` globally
+- [scripts/rebuild-all-domains.sh](scripts/rebuild-all-domains.sh) — rebuilds all web domains for all users
 
 ## Usage
 
